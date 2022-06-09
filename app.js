@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000; // use either the host env var port (PORT
 
 app.get('/', (req, res) => { // send a get request to root directory ('/' is this file (app.js))
   try {
-    res.send(`<h1>Today's Activity: Do Stuff</h1>`)) // extract the JSON body content from the response (specifically the activity value) and sends it to the client
+    res.send(`<h1>Today's Activity: Do Stuff</h1>`); // extract the JSON body content from the response (specifically the activity value) and sends it to the client
   } catch(err){ // catch any errors
     console.log(err); // log errors to the console
   })
