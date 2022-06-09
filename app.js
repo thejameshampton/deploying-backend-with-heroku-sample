@@ -8,7 +8,7 @@ app.get('/', (req, res) => { // send a get request to root directory ('/' is thi
     res.send(`<h1>Today's Activity: Do Stuff</h1>`); // extract the JSON body content from the response (specifically the activity value) and sends it to the client
   } catch(err){ // catch any errors
     console.log(err); // log errors to the console
-  })
+  }
 })
 
 app.listen(PORT, () => { // start server and listen on specified port
